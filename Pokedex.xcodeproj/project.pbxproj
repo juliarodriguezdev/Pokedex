@@ -54,6 +54,14 @@
 		A302DC7722C28A0E00CD0C2B /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				A302DC8A22C28B9D00CD0C2B /* Resources */,
+			);
+			path = Pokedex;
+			sourceTree = "<group>";
+		};
+		A302DC8A22C28B9D00CD0C2B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				A302DC7822C28A0E00CD0C2B /* AppDelegate.swift */,
 				A302DC7A22C28A0E00CD0C2B /* ViewController.swift */,
 				A302DC7C22C28A0E00CD0C2B /* Main.storyboard */,
@@ -61,7 +69,7 @@
 				A302DC8122C28A1200CD0C2B /* LaunchScreen.storyboard */,
 				A302DC8422C28A1200CD0C2B /* Info.plist */,
 			);
-			path = Pokedex;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,7 +292,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 899TSM5Z6B;
-				INFOPLIST_FILE = Pokedex/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Pokedex/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +310,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 899TSM5Z6B;
-				INFOPLIST_FILE = Pokedex/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Pokedex/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

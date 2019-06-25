@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pokedex" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Yb3-fw-DdQ">
+                                <rect key="frame" x="0.0" y="80" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="LZY-xg-l5d" userLabel="Background">
+                                <rect key="frame" x="82.5" y="178" width="249" height="265"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="265" id="7cg-rz-LIj"/>
+                                    <constraint firstAttribute="width" constant="249" id="Aj8-Sl-TeN"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="APh-F3-kjq">
+                                <rect key="frame" x="82.5" y="178" width="249" height="265"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="vxS-DO-bMA">
+                                <rect key="frame" x="82.5" y="483" width="249" height="87.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4b-QM-quR">
+                                        <rect key="frame" x="103.5" y="0.0" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bd5-6e-8s7">
+                                        <rect key="frame" x="103.5" y="33.5" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWo-Hu-chQ">
+                                        <rect key="frame" x="103.5" y="67" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="APh-F3-kjq" firstAttribute="width" secondItem="LZY-xg-l5d" secondAttribute="width" id="3Hv-KV-cLQ"/>
+                            <constraint firstItem="LZY-xg-l5d" firstAttribute="top" secondItem="Yb3-fw-DdQ" secondAttribute="bottom" constant="42" id="43e-1h-vVO"/>
+                            <constraint firstItem="LZY-xg-l5d" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ME8-pd-Q1P"/>
+                            <constraint firstItem="Yb3-fw-DdQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="S4l-0U-jTT"/>
+                            <constraint firstItem="Yb3-fw-DdQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WhE-4l-GYM"/>
+                            <constraint firstItem="vxS-DO-bMA" firstAttribute="width" secondItem="LZY-xg-l5d" secondAttribute="width" id="WjQ-5W-uH0"/>
+                            <constraint firstItem="APh-F3-kjq" firstAttribute="height" secondItem="LZY-xg-l5d" secondAttribute="height" id="WnB-4R-rFa"/>
+                            <constraint firstItem="LZY-xg-l5d" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:1" constant="-647" id="fIe-sa-ExF"/>
+                            <constraint firstItem="APh-F3-kjq" firstAttribute="centerY" secondItem="LZY-xg-l5d" secondAttribute="centerY" id="gsX-OQ-ddA"/>
+                            <constraint firstItem="APh-F3-kjq" firstAttribute="centerX" secondItem="LZY-xg-l5d" secondAttribute="centerX" id="hsH-iq-0q2"/>
+                            <constraint firstItem="vxS-DO-bMA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="o77-na-W2d"/>
+                            <constraint firstItem="vxS-DO-bMA" firstAttribute="top" secondItem="LZY-xg-l5d" secondAttribute="bottom" constant="40" id="t7q-fL-2Jc"/>
+                            <constraint firstItem="Yb3-fw-DdQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vs3-TB-DwN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pokemon" width="201" height="200"/>
+    </resources>
+</document>
