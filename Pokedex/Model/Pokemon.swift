@@ -13,7 +13,7 @@ struct TopLevelDict: Decodable {
         case name
         case id
         case abilities
-        case spritesDictionary = "spites"
+        case spritesDictionary = "sprites"
     }
     
     
